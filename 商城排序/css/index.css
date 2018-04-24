@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #555;
+    background: #f5f5f5;
+}
+.container {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.header {
+    padding: 0 20px;
+    background: #fff;
+    line-height: 50px;
+}
+.header a {
+    position: relative;
+    color: #333;
+    cursor: pointer;
+    padding: 0 12px 5px 9px;
+}
+.header a:hover {
+    color: red;
+}
+.header i {
+    width: 0;
+    position: absolute;
+    height: 0;
+    display: inline-block;
+    border: 6px solid transparent;
+    right: 0;
+}
+
+.header i:first-child {
+    bottom: 0px;
+    border-top-color: #33333340;
+}
+.header i:last-child {
+    top: -5px;
+    border-bottom-color: #33333340;
+}
+
+.header a:hover i:first-child {
+    border-top-color: red;
+}
+.header a:hover i:last-child {
+    border-bottom-color: red;
+}
+.list {
+    width: 1210px;
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: 0;
+}
+.list li {
+    display: inline-block;
+    vertical-align: top;
+    width: 188px;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 14px 20px 0;
+    background: #fff;
+}
+.list li img {
+    display: block;
+    width: 100%;
+}
+.list li p {
+    line-height: 20px;
+    height: 40px;
+    font-size: 13px;
+    padding-top: 15px;
+    color: #999;
+}
+.list li span {
+    color: #333;
+    line-height: 26px;
+}
+
+

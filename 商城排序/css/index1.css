@@ -1,0 +1,96 @@
+body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+}
+ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    margin: 20px 0;
+    background: #fff;
+    padding: 15px;
+}
+.header span {
+    color: #666;
+}
+.header a {
+    display: inline-block;
+    padding-right: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    position: relative;
+}
+.header a:hover {
+    color: red;
+}
+.header i {
+    width: 0;
+    position: absolute;
+    height: 0;
+    display: inline-block;
+    border: 6px solid transparent;
+    right: 0;
+}
+
+.header i:first-child {
+    bottom: 0;
+    border-top-color: #33333340;
+}
+.header i:last-child {
+    top: 3px;
+    border-bottom-color: #33333340;
+}
+
+.header a:hover i:first-child {
+    border-top-color: red;
+}
+.header a:hover i:last-child {
+    border-bottom-color: red;
+}
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    overflow: hidden;
+}
+.productList li {
+    width: 183px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom:  20px;
+    height: 240px;
+    background: #fff;
+}
+.productList li:nth-child(5n) {
+    margin-right: 0;
+}
+.productList li img {
+    display: block;
+    width: 139px;
+    margin: 0 auto;
+}
+.productList li p {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    height: 55px;
+    text-align: justify;
+}
+.productList li span {
+    font-size: 14px;
+    color: #999;
+}
+
