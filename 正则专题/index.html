@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>id查重</title>
+</head>
+<body>
+<ul class="li" id="li1">1</ul>
+<ul class="li" id="li1">2</ul>
+<ul class="li" id="li3">3</ul>
+<input id="li1" type="text" name="hobby" value="music">
+<div id="idid" name="hobby">music</div>
+
+<script>
+    $attr = (domID, name, value) => {
+
+        let tagList = document.getElementsByTagName('*');
+        tagList = [...tagList]; //基于ES6展开运算符
+        tagList = tagList.filter((item) => {
+            return item.id == domID && item.getAttribute('name') && (item.innerHTML == value || item.value == value);
+        });
+        return tagList;
+    };
+    console.log($attr('idid', 'hobby', 'music'));
+</script>
+</body>
+</html>
